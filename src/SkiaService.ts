@@ -15,12 +15,14 @@ export class SkiaService {
   private imageCache: Map<string, HTMLImageElement> = new Map()
 
   async init(canvasElementId: string) {
+    const basePath = import.meta.env.BASE_URL
+
     this.canvasKit = await CanvasKitInit({
       locateFile: (file) => {
         if (file === 'canvaskit.wasm') {
-          return '/skia/canvaskit-pdf.wasm'
+          return `${basePath}skia/canvaskit-pdf.wasm`
         }
-        return `/skia/${file}`
+        return `${basePath}skia/${file}`
       },
     })
 
