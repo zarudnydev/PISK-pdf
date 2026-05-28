@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
+    <title>pisk-app</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="scenes">
+        <div>
+            <h3>Pixi Canvas</h3>
+            <div id="pixi-container"></div>
+        </div>
+
+        <div>
+            <h3>Skia Canvas</h3>
+            <canvas id="skia-canvas"></canvas>
+        </div>
+   </div>
+    <div class="controls">
+     <button id="add-random-shape">Сгенерировать случайную линию / фигуру</button>
+     <button id="export-pdf">Экспорт в PDF</button>
+    </div>
+   </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

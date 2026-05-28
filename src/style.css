@@ -1,0 +1,38 @@
+body {
+    background-color: #eeeeee;
+}
+button {
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: #2196F3;
+    color: white;
+}
+
+button:hover {
+    background-color: #0b7dda;
+}
+
+canvas {
+    border: 2px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scenes {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.controls {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
